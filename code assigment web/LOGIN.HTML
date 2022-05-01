@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@400;700&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("images//images\ \(3\).jpg");
+            font-family: 'Montserrat',sans-serif;
+            font-size: 17px;
+        }
+        .wapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+        form{
+            border: 1px solid #3d3f44;
+            border-radius: 5px;
+            padding: 30px;
+        }
+        h3{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .form-Group{
+            margin-bottom: 15px;
+        }
+        input{
+            height: 50px;
+            width: 300px;
+            outline: none;
+            border: 1px solid #a0a5b1;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: inherit;
+            color: #202124;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="wapper">
+        <form action="">
+            <h3>ĐĂNG NHẬP</h3>
+            <div class="form-Gruop">
+                <input type="text" name="password">
+                <label for="">Tài Khoản</label>
+            </div>
+            <div class="form-Group">
+                <input type="password" name="password">
+                <label for="">Mật Khẩu</label>
+            </div>
+            <input type="submit" value="đăng nhập" id="btn-login">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');    
+    body{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #111;
+      line-height: 1.15;
+      background-image: url(/images/images\ \(3\).jpg);
+      background-size: cover;
+      background-position-y: -100px;
+    }
+    *{
+      text-decoration: none;
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      color: rgb(0, 0, 0);
+      font-family: Arial;
+      
+    }
+    /* menu*/
+    #centainer{
+      background-color: rgb(205,133,63);
+      display: flex;
+      height: 5em;
+      line-height: 5em;
+      justify-content: space-between;
+
+    }
+    .logo {
+      font-size: 2em;
+      padding-right: 8em;
+      
+    }
+    
+    .menu{
+      display: flex;
+      transition: width 2s;
+      padding-right: 25em;
+    }
+    .menu li{
+      padding-right:2em;
+      font-size: 17px;
+      
+    }
+    .menu li a:hover {
+      color: rgb(194, 16, 16);
+      
+    
+    }
+    .menu_down{
+      background-color: rgb(192, 111, 31);
+      width: 160px;
+      height: 10em;
+      line-height: 3em;
+      margin: 0px auto;
+      position: absolute;
+      top: 45px;
+      right: 600px;
+      display: none;
+    }
+    .menu_down li{
+      text-align: center;
+      padding: 0px;
+      
+    }
+    
+    .menu .menu_link:hover .menu_down {
+      display: block;
+        
+    }
+    
+    .search{
+      color: #000;
+      font-size: 16px;
+      text-decoration: none;
+      position:absolute; 
+      left: 1050px;
+      display: flex;
+      top: 24px;
+    }
+    .header{
+        padding: 15px;
+        min-height: 500px;
+    }
+    .thongtin{
+        padding: 20px;
+        line-height: 2em;
+        
+    }
+    /*chantrang*/
+    .footer{
+      background: gray;
+      padding: 20px;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="centainer"> 
+        <img src="/images/logo.png" alt="DoCoBKC.VN">
+        <a href="#" class="logo">Đồ Cổ BKC</a>
+        
+        <ul class="menu">
+          <li><a href="trang chu.html">Trang Chủ</a></li>
+          <li class="menu_link">
+            <a href="danhsachsanpham.html">Sản Phẩm</a>
+            <ul class="menu_down">
+              <li><a href="#">Tiền Cổ</a></li>
+              <li><a href="#">Gốm Sứ</a></li>
+              <li><a href="#">Tranh Cổ</a></li>       
+            </ul>
+          </li>
+          <li><a href="daugia.html" >Đấu Giá</a></li>
+          <li><a href="lienhe.html" >Liên Hệ</a></li> 
+          <li><a href="LOGIN.HTML" >Login</a></li>
+          <li class="search">
+            <input type="search" placeholder="Search..."> 
+            <button>Tìm Kiếm</button>
+            
+          </li>
+        </ul>
+      </div>
+      <div class="lienhe">
+
+      </div>
+    <div class="header" >
+        <h1 align="center">Thông Tin liên Hệ</h1>
+        <hr/>
+        <a><font style="color:#000;font-weight:bold;FONT-SIZE:18PX;"> Không tìm thấy câu trả lời bạn cần? Hãy cho chúng tôi biết vấn đề của bạn qua form dưới đây, hoặc email đến</font><font style="color:blue;font-weight:bold;FONT-SIZE:18PX;"> DoCoBKC@gmail.com</font></a> 
+<font style="font-weight:bold;FONT-SIZE:18PX;">
+<br>||  <font style="color:#ff0000;font-weight:bold;">KỸ THUẬT:</font> 1900 0000 - Nhấn phím 1
+<br>|| <font style="color:#ff0000;font-weight:bold;">Chăm sóc khách hàng: </font>1900 1111 - Nhấn phím 2</font>
+        <div class="thongtin">
+            <div>
+                <td>
+                    Họ tên:
+                </td>
+                <td>
+                    <input type="text" name="ho_ten"> *
+                </td>
+            </div>
+            <div>
+                <div >
+                    Điện thoai:
+                    <div>
+                        <input type="text" name="so_dien_thoai">*
+                    </div>
+                </div>
+                <div>
+                    <div >
+                        Địa chỉ:
+                        <div>
+                            <input type="text" name="dia_chi" size="50">*
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    Email:
+                    <div>
+                        <input type="text" name="email">*
+                    </div>
+                </div>
+            </div>
+            <dl class="ctrlUnit">
+              <dt><label for="ctrl_subject">Tiêu đề:</label></dt>
+              <dd><input type="text" name="subject" class="textCtrl" id="ctrl_subject" /></dd>
+            </dl>
+
+            <dl class="ctrlUnit">
+              <dt><label for="ctrl_message">Nội dung:</label></dt>
+              
+              <dd><textarea name="message" class="textCtrl Elastic" id="ctrl_message" rows="5"></textarea></dd>
+            </dl>
+            
+            <tr>
+                <td>
+                <button>
+                    Đăng kí:
+                </button>
+                </td>
+                <button type="reset">
+                    Xóa thông tin
+                </button>
+            </tr>
+            <hr/>
+            <Center>Vui lòng để số điện thoại vào phần nội dung cần hỗ trợ để chúng tôi có thể liên hệ hỗ trợ nhanh nhất .</center>
+        </div>
+    </div>
+    <div class="footer">
+        <span>Copyright &copy; 2022-2025 BKC.VN</span>
+        
+    </div>      
+</body>
+</html>

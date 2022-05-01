@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đấu Giá</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
+    body{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #111;
+      line-height: 1.15;
+      background-image: url(/images/images\ \(3\).jpg);
+      background-size: cover;
+      background-position-y: -100px;
+    }
+    *{
+      text-decoration: none;
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      color: rgb(0, 0, 0);
+      font-family: Arial;
+      
+    }
+    /* menu*/
+    #centainer{
+      background-color: rgb(205,133,63);
+      display: flex;
+      height: 4.5em;
+      line-height: 4.5em;
+      justify-content: space-between;
+
+    }
+    .logo {
+      font-size: 2em;
+      padding-right: 7em;
+      
+    }
+    
+    .menu{
+      display: flex;
+      transition: width 2s;
+      padding-right: 22em;
+    }
+    .menu li{
+      padding-right:2em;
+      font-size: 17px;
+      
+    }
+    .menu li a:hover {
+      color: rgb(194, 16, 16);
+      
+    
+    }
+    .menu_down{
+      background-color: rgb(192, 111, 31);
+      width: 160px;
+      height: 10em;
+      line-height: 3em;
+      margin: 0px auto;
+      position: absolute;
+      top: 45px;
+      right: 600px;
+      display: none;
+    }
+    .menu_down li{
+      text-align: center;
+      padding: 0px;
+      
+    }
+    
+    .menu .menu_link:hover .menu_down {
+      display: block;
+        
+    }
+    
+    
+    .search{
+      color: #000;
+      font-size: 16px;
+      text-decoration: none;
+      position:absolute; 
+      left: 1050px;
+      display: flex;
+      top: 15px;
+    }
+    /*đấu giá*/
+    *,*:after,*:before{
+      box-sizing:inherit
+    }html{
+      box-sizing:border-box;font-size:62.5%
+    }body{
+      color:#606c76;
+      font-family:'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      font-size:1.6em;
+      font-weight:300;
+      letter-spacing:.01em;
+      line-height:1.6
+    }
+    .button,button,input[type='button'],input[type='reset'],input[type='submit']{
+      background-color:#9b4dca;
+      border:0.1rem solid #9b4dca;border-radius:.4rem;
+      color:#fff;cursor:pointer;display:inline-block;
+      font-size:1.1rem;font-weight:700;
+      height:3.8rem;letter-spacing:.1rem;
+      line-height:3.8rem;padding:0 3.0rem;text-align:center;text-decoration:none;
+      text-transform:uppercase;white-space:nowrap
+    }
+    hr{
+      border:0;
+      border-top:0.1rem solid #f4f5f6;
+      margin:3.0rem 0
+    }
+    input[type='email'],input[type='number'],input[type='password'],input[type='search'],input[type='tel'],input[type='text'],input[type='url'],textarea,select{
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      appearance:none;
+      background-color:transparent;
+      border:0.1rem solid #000000;
+      border-radius:.4rem;
+      box-shadow:none;
+      box-sizing:inherit;
+      height:3.8rem;
+      padding:.6rem 1.0rem;
+      width:100%
+    }
+    input[type='email']:focus,input[type='number']:focus,input[type='password']:focus,input[type='search']:focus,input[type='tel']:focus,input[type='text']:focus,input[type='url']:focus,textarea:focus,select:focus{
+      border-color:#9b4dca;
+      outline:0
+    }
+    
+   
+    .row .column.column-25{
+      flex:0 0 25%;
+      max-width:25%
+    }
+    .row .column.column-33,.row .column.column-34{
+      flex:0 0 33.3333%;
+      max-width:33.3333%
+    }
+    @media (min-width: 40rem){.row{flex-direction:row;margin-left:-1.0rem;width:calc(100% + 2.0rem)}
+    .row .column{
+      margin-bottom:inherit;
+      padding:0 1.0rem
+    }}
+    
+
+        /*chantrang*/
+    .footer{
+      background: gray;
+      padding: 20px ;
+      text-align: center;
+        
+    }
+    </style>
+</head>
+<body>
+    <div id="centainer"> 
+        <img src="/images/logo.png" alt="DoCoBKC.VN">
+        <a href="#" class="logo">Đồ Cổ BKC</a>
+        
+        <ul class="menu">
+          <li><a href="trang chu.html">Trang Chủ</a></li>
+          <li class="menu_link">
+            <a href="danhsachsanpham.html">Sản Phẩm</a>
+            <ul class="menu_down">
+              <li><a href="#">Tiền Cổ</a></li>
+              <li><a href="#">Gốm Sứ</a></li>
+              <li><a href="#">Tranh Cổ</a></li>       
+            </ul>
+          </li>
+          <li><a href="daugia.html" >Đấu Giá</a></li>
+          <li><a href="lienhe.html" >Liên Hệ</a></li> 
+          <li><a href="LOGIN.HTML" >Login</a></li>
+          <li class="search">
+            <input type="search" placeholder="Search..."> 
+            <button>Tìm Kiếm</button>
+            
+          </li>
+        </ul>
+      </div>
+    <div class="headline" align="center" style="padding: 20px;min-height: 120px;">
+        <h3>Đấu Giá</h3>
+      </div>
+      <div style="margin: 20px 30px;">
+      <div class="row">
+        <div class="column column-33">
+          <label>Địa chỉ</label>
+          <td>
+            <input type="text" name="ho_ten"> *
+        </td>
+          <label>Sản phẩm muốn đấu giá</label>
+          <select id="text">
+          </select>
+        </div>
+        <div class="column column-25">
+          <label>Bid Amount</label>
+          <input type="number" id="bidAmount" placeholder="28300 ether">
+        </div>
+        <div class="column column-25">
+          <label><br /></label>
+          <button id="makeBid">Bid</button>
+        </div>
+      </div>
+      
+      <hr />
+      
+      <button id="endAuction" disabled="disabled">End Auction</button>
+      </div>
+      <div class="footer" >
+        <span>Copyright &copy; 2022-2025 BKC.VN</span>
+        
+      </div>
+</body>
+</html>
